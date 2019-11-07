@@ -8,6 +8,10 @@
 * Hình ảnh của sản phẩm cần rõ ràng
 ## 2. Về tiện ích 
 * Khi khách hàng ghé thăm web sẽ thấy thoải mái hơn nếu tìm sản phẩm nhanh, sản phẩm có đủ thông tin để lựa chọn, thêm bào giỏ hàng và mua hàng nhanh chóng…Như vậy mình thiết kế web phải chú ý đến cách sắp xếp danh mục sản phẩm. 
+## 3. Về công nghệ
+* Ngôn ngữ sử dụng: PHP, JS
+* Framework: Laravel
+* Cơ sở dữ liệu: MySQL
 
 
 
