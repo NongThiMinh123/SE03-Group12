@@ -1,5 +1,7 @@
 
 # 2NM Comestic Website Project
+### Trưởng nhóm: Nguyễn Thị Hà My
+### Thư Kí: Ngô Thị Diệu Ngân
 # I. Mục tiêu và kết quả đạt được
 ## 1. Về giao diện
 * Màu sắc chủ đạo của website phải hài hòa
