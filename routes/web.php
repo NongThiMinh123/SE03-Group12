@@ -6,3 +6,4 @@ Route::get('login', 'LoginController@index')->name('nmn.login');
 Route::get('login/done', 'LoginController@login')->name('nmn.logindone');
 Route::get('sign', 'SignController@index')->name('nmn.signup');
 Route::get('sign/done', 'SignController@create')->name('nmn.insert');
+Route::get('logout','LoginController@logout')->name('logout');

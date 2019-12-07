@@ -90,11 +90,20 @@
                     </span>
                     <div class="header-icons">
                         &nbsp &nbsp &nbsp
+                        @if(Auth::check())
+                        <span class="dropdown">
+                        <a  href=""><span class="header-icon dropdown animate-dropdown "><i class="far fa-user"> <span style="font-family:'Century Gothic';font-size:15px;">&nbsp  {{Auth::user()->username}}</span></i></a>
+                            <div class="dropdown-content" style="font-size: 15px;">
+                                <a href="{{route('logout')}}" data-toggle="tooltip" title="Log out"><i class="glyphicon glyphicon-log-out"></i>&nbsp Log Out</a>
+                            </div>
+                        </span>
+                        @else
                         <span class="header-icon dropdown animate-dropdown">
                             <a href="{{route('nmn.login')}}" target="_parent">
                                 <i class="far fa-user"></i>
                             </a>
                         </span>
+                        @endif
                         &nbsp &nbsp &nbsp
                         <span class="header-icon dropdown animate-dropdown" >
                             <a href="#">
