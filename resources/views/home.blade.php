@@ -264,7 +264,7 @@
                     }
                     slideIndex++;
                     if (slideIndex > slides.length) {slideIndex = 1}    
-                    for (i = 0; i < dots; i++) {
+                    for (i = 0; i < dots.length; i++) {
                         dots[i].className = dots[i].className.replace(" active", "");
                     }
                     slides[slideIndex-1].style.display = "block";  
