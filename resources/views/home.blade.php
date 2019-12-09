@@ -91,7 +91,7 @@
                     <div class="header-icons">
                         &nbsp &nbsp &nbsp
                         <span class="header-icon dropdown animate-dropdown">
-                            <a href="#" target="_parent">
+                            <a href="{{route('nmn.login')}}" target="_parent">
                                 <i class="far fa-user"></i>
                             </a>
                         </span>
@@ -99,7 +99,7 @@
                         <span class="header-icon dropdown animate-dropdown" >
                             <a href="#">
                                 <i class="fas fa-shopping-basket"></i>
-                            </a><span class="badge badge-light">{{ Cart::count() }}</span>
+                            </a><span class="badge badge-light"></span>
                         </span>
                     </div>
                 </div>
@@ -255,7 +255,7 @@
                     }
                     slideIndex++;
                     if (slideIndex > slides.length) {slideIndex = 1}    
-                    for (i = 0; i < dots; i++) {
+                    for (i = 0; i < dots.length; i++) {
                         dots[i].className = dots[i].className.replace(" active", "");
                     }
                     slides[slideIndex-1].style.display = "block";  
