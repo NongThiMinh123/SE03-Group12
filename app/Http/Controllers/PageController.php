@@ -11,4 +11,8 @@
         $news = ProductModel::where('type', 'Serum')->get();
         return view('home',compact('sales', 'summers', 'news'));
         }
+        public function detail(Request $request){
+            $products = DB::table('products')->where('id',$request->id)->first();
+            return view('detail',compact('products'));
+        } 
     }
