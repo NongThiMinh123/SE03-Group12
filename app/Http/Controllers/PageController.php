@@ -12,6 +12,7 @@
         return view('home',compact('sales', 'summers', 'news'));
         }
 
+
         public function skincare() {
             $cws = ProductModel::where('type', 'CW')->paginate(4, ['*'], 'cws');
             $cgs = ProductModel::where('type', 'CG')->paginate(4, ['*'], 'cgs');
@@ -62,4 +63,8 @@
             $products = DB::table('products')->where('id',$request->id)->first();
             return view('detail',compact('products'));
         } 
+
     }
+
+    }
+
