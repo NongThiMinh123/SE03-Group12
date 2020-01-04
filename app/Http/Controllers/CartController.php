@@ -67,7 +67,7 @@ public function postCheckOut(Request $request) {
     // if ($validator->fails()) {
     //     return redirect('/checkout')
     //                 ->withErrors($validator)
-    //                 ->withInput();
+    //                 ->withInput();//////
     // }
     
     try {
