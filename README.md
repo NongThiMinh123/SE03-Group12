@@ -14,6 +14,11 @@
 * Ngôn ngữ sử dụng: PHP, JS
 * Framework: Laravel
 * Cơ sở dữ liệu: MySQL
+## 4. Chức năng chính
+### Người dùng
+####  Tùy vào người dùng cụ thể thì việc phân quyền sử dụng trang web cũng khác nhau. Ví dụ như
+* Admin: xem được doanh thu, xem thông tin chính sản phẩm trong khom, thông tin khách hàng.. .
+* Khách hàng: có thể đăng nhập , xem sản phẩm đã mua, lựa chọn sản phẩm mua ...
 
 
 
