@@ -278,15 +278,15 @@
                                             <div class="carousel-col">
                                                 <a href="#">
                                                     <div>
-                                                        <a href="#"><img src="{{$product->product_img}}" alt="#" class=" img-responsive"></a>
+                                                        <a href="{{route('detail',$product->id}}"><img src="{{$product->product_img}}" alt="#" class=" img-responsive"></a>
                                                     </div>
                                                 </a>
                                                 <div class ="product_info">
-                                                    <a href="#">{{$product->product_name}}</a>
+                                                    <a href="{{route('detail',$product->id}}">{{$product->product_name}}</a>
                                                     <p class="price">{{ number_format($product->product_price,0,',','.') }} VNĐ </p>
                                                     <div class="single-item-caption">
                                                         <p>
-                                                            <a class="beta-btn primary" href="#">Details</a> |
+                                                            <a class="beta-btn primary" href="{{route('detail',$product->id}}">Details</a> |
                                                             <a href="#"><i class="glyphicon glyphicon-shopping-cart" align="right"></i></a>
                                                             <div class="clearfix"></div>
                                                         </p>
@@ -319,7 +319,7 @@
                                                 <a href="#">
                                                     <!-- <div class="wrapper"> -->
                                                         <div class="img">                                                 
-                                                            <a href="#"><img src="{{$product->product_img}}" alt="#" class=" img-responsive"></a>
+                                                            <a href="{{route('detail',$product->id}}"><img src="{{$product->product_img}}" alt="#" class=" img-responsive"></a>
                                                             <div class="ribbon-wrapper">
                                                                 <div class="ribbon">20% OFF</div>
                                                             </div>
@@ -327,11 +327,11 @@
                                                     <!-- </div> -->
                                                 </a>
                                                 <div class ="product_info">
-                                                    <a href="#">{{$product->product_name}}</a>
+                                                    <a href="{{route('detail',$product->id}}">{{$product->product_name}}</a>
                                                     <p class="price"><del>{{number_format($product->product_price,0,',','.')}} VNĐ</del> -> {{number_format($product->product_price,0,',','.')}} VNĐ</p>
                                                     <div class="single-item-caption">
                                                         <p>
-                                                            <a class="beta-btn primary" href="#">Details</a> |
+                                                            <a class="beta-btn primary" href="{{route('detail',$product->id}}">Details</a> |
                                                             <a href="#"><i class="glyphicon glyphicon-shopping-cart" align="right"></i></a>
                                                             <div class="clearfix"></div>
                                                         </p>
@@ -353,15 +353,15 @@
                                             <div class="carousel-col">
                                                 <a href="#">
                                                     <div>
-                                                        <a href="#"><img src="{{$product->product_img}}" alt="#" class=" img-responsive"></a>
+                                                        <a href="{{route('detail',$product->id}}"><img src="{{$product->product_img}}" alt="#" class=" img-responsive"></a>
                                                     </div>
                                                 </a>
                                                 <div class ="product_info">
-                                                    <a href="#">{{$product->product_name}}</a>
+                                                    <a href="{{route('detail',$product->id}}">{{$product->product_name}}</a>
                                                     <p class="price">{{number_format($product->product_price,0,',','.')}} VNĐ</p>
                                                     <div class="single-item-caption">
                                                         <p>
-                                                            <a class="beta-btn primary" href="#">Details</a> |
+                                                            <a class="beta-btn primary" href="{{route('detail',$product->id}}">Details</a> |
                                                             <a href="#"><i class="glyphicon glyphicon-shopping-cart" align="right"></i></a>
                                                             <div class="clearfix"></div>
                                                         </p>

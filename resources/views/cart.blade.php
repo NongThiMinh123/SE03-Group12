@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <h3 style="margin: 30px 0;">My Shopping Cart</h3>
             <div class="table-responsive cart_info table-striped">
-                <form action="#" method='get'>
+                <form action="{{route('gio-hang')}}" method='get'>
                 <table class="table table-condensed">
                     <thead>
                         <tr class="cart_menu">
