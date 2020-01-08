@@ -25,8 +25,8 @@
 * Admin: xem được doanh thu, xem thông tin chính sản phẩm trong khom, thông tin khách hàng.. .
 * Khách hàng: có thể đăng nhập , xem sản phẩm đã mua, lựa chọn sản phẩm mua ...
 # II. Công việc triển khai. 
-* 1. Tìm hiểu về HTML và CSS cơ bản. 
-* 2. Tìm hiểu về Boostrap cơ bản.
-* 3. Tìm hiểu về Laravel. 
+*  Tìm hiểu về HTML và CSS cơ bản. 
+*  Tìm hiểu về Boostrap cơ bản.
+*  Tìm hiểu về Laravel. 
 
 
