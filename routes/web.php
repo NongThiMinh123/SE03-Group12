@@ -8,11 +8,8 @@ Route::get('sign', 'SignController@index')->name('nmn.signup');
 Route::get('sign/done', 'SignController@create')->name('nmn.insert');
 
 Route::get('logout','LoginController@logout')->name('logout');
-
-
 //product's detail
 Route::get('product/detail/{id}', 'PageController@detail')->name('detail');
-
 // Cart
 Route::get('them-san-pham/{id}','CartController@addProductToCart')->name('get.add.product');
 Route::get('gio-hang','CartController@listCartProduct')->name('gio-hang');
@@ -23,19 +20,14 @@ Route::get('gio-hang/remove/{id}', 'CartController@remove')->name('remove');
 Route::get('hair', 'PageController@hair')->name('hair');
 //makeup
 Route::get('makeup', 'PageController@makeup')->name('makeup');
-
 //b_tools
 Route::get('beauty_tool', 'PageController@tool')->name('beauty_tools');
-
 // //skincare
 Route::get('skincare', 'PageController@skincare')->name('skincare');
-
 // //b&b
 Route::get('bath_body', 'PageController@body')->name('bath_body');
-
 // //ffood
 Route::get('functional_food', 'PageController@food')->name('functional_foods');
-
 
 
 Route::get('DG', 'dropdownController@DG')->name('DG');
