@@ -5,16 +5,8 @@
            text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap; 
-            /* word-wrap: break-word;
-            min-width: 80px;
-            max-width: 80px;
-            white-space:normal; */
+            
         }
-        /* table,tr,td,th{
-            width: 100%;
-            height: 100%;
-            border:1px solid black;
-        } */
          td  {
             width:80px;
         }
