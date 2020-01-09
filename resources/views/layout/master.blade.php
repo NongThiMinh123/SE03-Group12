@@ -57,6 +57,7 @@
                         <span class="header-icon dropdown animate-dropdown" >
                             <a href="{{route('gio-hang')}}">
                                 <i class="fas fa-shopping-basket"></i>
+                                </a><span class="badge badge-light">{{ Cart::count() }}</span>
                             </a><span class="badge badge-light"></span>
                         </span>
                     </div>
