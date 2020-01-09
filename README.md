@@ -36,6 +36,7 @@
 * Đầu tiên các bạn lên trang chủ  getcomposer.org và download file composer_setup.exe về.
 * Sau đó mở file lên và cài đặt theo link sau: 
 https://hocwebchuan.com/tutorial/laravel/install_composer.php
+* CHÚ Ý: sau khi hoàn tất cài đặt, chạy câu lệnh ***composer require bumbummen99/shoppingcart*** tại **git bash** để có thể thực hiện các tính năng trong giỏ hàng.
 
 ## 2.Cài đặt laravel.
 ### a. Cấu hình yêu cầu khi cài đặt laravel.
