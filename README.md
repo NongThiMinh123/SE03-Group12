@@ -19,6 +19,6 @@
 ####  Tùy vào người dùng cụ thể thì việc phân quyền sử dụng trang web cũng khác nhau. Ví dụ như
 * Admin: xem được doanh thu, xem thông tin chính sản phẩm trong khom, thông tin khách hàng.. .
 * Khách hàng: có thể đăng nhập , xem sản phẩm đã mua, lựa chọn sản phẩm mua ...
-
+## 4. Chú ý sử dụng
 
 
