@@ -1,7 +1,7 @@
 <?php
     namespace App\Http\Controllers;
     use Illuminate\Http\Request;
-    use App\ProductsModel;
+    use App\ProductModel;
     use App\BillModel;
     use App\CustomerModel;
     use App\BillDetailModel;
@@ -94,7 +94,7 @@
                 "product_price"=>  $product_price,
                 "product_description"=>  $product_description
                 );
-            $users = productsModel::insert($data);
+            $users = productModel::insert($data);
             $alert="Successfully!";
             return redirect()->route('manage')->with('alert',$alert);
         }
