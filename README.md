@@ -4,12 +4,13 @@
 ### Thư Kí: Ngô Thị Diệu Ngân
 # I. Mục tiêu và kết quả đạt được
 ## 1. Về giao diện
-* Màu sắc chủ đạo của website phải hài hòa, dễ nhìn
-* Các quảng cáo và menu có kích cỡ phù hợp, cân đối
+* Màu sắc chủ đạo của website phải hài hòa, dễ nhìn.
+* Các quảng cáo và menu có kích cỡ phù hợp, cân đối.
 * Cách thức thêm sản phẩm vào giỏ, đặt hàng,.... trên website phải được sắp xếp khoa học và dễ dàng sử dụng.
-* Hình ảnh của sản phẩm cần rõ ràng
+* Hình ảnh của sản phẩm cần rõ ràng, thông tin cơ bản đầy đủ.
 ## 2. Về tiện ích 
 * Khi khách hàng ghé thăm web sẽ thấy thoải mái hơn nếu tìm sản phẩm nhanh, sản phẩm có đủ thông tin để lựa chọn, thêm bào giỏ hàng và mua hàng nhanh chóng … Như vậy mình thiết kế web phải chú ý đến cách sắp xếp danh mục sản phẩm. 
+* Thông tin chi tiết sản phẩm cần đầy đủ rõ ràng để khách hàng dễ dàng lựa chọn, mua sắm.
 ## 3. Về công cụ và công nghệ sử dụng
 ### Công cụ
 * Visual Studio Code
