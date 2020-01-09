@@ -23,21 +23,21 @@
                         @foreach($products as $product)
                         <tr>
                             <td class="cart_description">
-                                <p><a href="#"></a></p>
+                                <p><a href="{{route('detail',$product->id)}}">{{$product->name}}</p>
                             </td>
                             <td class="cart_price">
-                                <p> VND</p>
+                                <p>{{ number_format($product->price,0,',','.') }} VND</p>
                             </td>
                             <td class="cart_quantity">
-                                <a href='#'><button type="button" class="btn btn-default">+</button></a>
-                                    <input type="text" value="#" style="width: 35px; text-align: center;"> 
-                                <a href='#'><button type="button" class="btn btn-default">-</button></a>
+                                <a href='{{url("gio-hang?id=$product->id&increment=1")}}'><button type="button" class="btn btn-default">+</button></a>
+                                    <input type="text" value="{{ $product->qty }}" style="width: 35px; text-align: center;"> 
+                                <a href='{{url("gio-hang?id=$product->id&decrease=1")}}'><button type="button" class="btn btn-default">-</button></a>
                             </td>
                             <td class="cart_total">
-                                <p class="cart_total_price"> VND</p>
+                                <p class="cart_total_price">{{ number_format($product->subtotal,0,',','.')}} VND</p>
                             </td>
                             <td class="cart_delete">
-                                <form action="" method="POST">
+                                <form action="route{{'remove',$product->rowId}}" method="POST">
                                 {{csrf_field()}}
                                 {{method_field('DELETE')}}
                                     <a class="cart_quantity_delete" href='{{url("gio-hang/remove",$product->rowId)}}'><i class="fa fa-times"></i></a>
@@ -56,7 +56,7 @@
                
                 <div class="row" style="margin:20px 0 30px;">
                     <div class='button'>
-                        <a href="#"><button type="button" class="btn btn-default" style="width:150px;float:right;">Checkout</button></a></p>
+                        <a href="{{route('checkout')}}"><button type="button" class="btn btn-default" style="width:150px;float:right;">Checkout</button></a></p>
                     </div>
                 </div>    
             </div>
