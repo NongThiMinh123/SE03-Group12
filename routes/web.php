@@ -58,7 +58,6 @@ Route::get('manage/insert', 'manageProductsController@update_insert')->name('man
 Route::get('manage/edit/{id}', 'manageProductsController@edit')->name('edit');
 Route::get('manage/edit/update/{id}', 'manageProductsController@update')->name('update');
 Route::get('manage/destroy/{id}', 'manageProductsController@destroy')->name('destroy');
-
 //manager_search
 Route::get('manage/search', 'manageProductsController@search')->name('manage.search');
 //order_management
