@@ -18,6 +18,8 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @if(count($products))
+                        @foreach($products as $product)
                         <tr>
                             <td class="cart_description">
                                 <p><a href="#"></a></p>
@@ -41,6 +43,8 @@
                                 </form>
                             </td>
                         </tr>
+                        @endforeach
+                        @endif
                     <!-- <p>You have no items in the shopping cart</p> -->
                     </tbody>
                     <tfoot style="border-top: 1px solid #f8f8f8; ">
