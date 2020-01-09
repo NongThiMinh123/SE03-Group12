@@ -18,6 +18,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                    <!-- cart -->
                         @if(count($products))
                         @foreach($products as $product)
                         <tr>
