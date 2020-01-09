@@ -137,6 +137,15 @@
                             <br><hr>
                             <p>Total: <span class="price" style="color:black">{{Cart::subtotal()}} VND</span></p>
                             <button type="submit" class="btn btn-default check_out" href="{{ url('checkout')}}">Purchase</button></td>
+                        @elseif(session('alert'))
+                          <p>You have no items in the shopping cart</p>
+                          <div class="alert alert-success" role="alert">
+                            {{session('alert')}}
+                            <a class="btn btn-default" href="{{ route('trangchu')}}">Back to shop!</a>
+                          </div>
+                        @else
+                            <p>You have no items in the shopping cart</p>
+                            <a class="btn btn-default update" href="{{route('trangchu')}}">Back</a>
                         @endif    
                         
                     </div>
