@@ -4,12 +4,10 @@
     use App\ProductsModel;
     use App\BillModel;
     use App\CustomerModel;
-
     use App\BillDetailModel;
     use Illuminate\Support\Facades\Session;
     use Illuminate\Support\Facades\Redirect;
     use Illuminate\Support\Facades\DB;
-    
     class manageProductsController extends Controller{
         public function index(){
             $makeups=DB::table('products')->where('catalogue','like','Makeup')->paginate(4, ['*'], 'makeups');
@@ -113,8 +111,6 @@
             ->orWhere('product_name','like','%'.$search.'%')->paginate(4, ['*'], 'products');
             return view('manageSearch',compact("products"));
         }
-
-
         public function bill(){
             $customers=DB::table('customer')
             ->paginate(5, ['*'], 'customers');
@@ -157,7 +153,5 @@
             ->paginate(5, ['*'], 'customers');
             return view('bill_order',compact("customers"));
         }
-
-
     }
 ?>
