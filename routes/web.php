@@ -13,11 +13,8 @@ Route::get('product/detail/{id}', 'PageController@detail')->name('detail');
 =======
 
 Route::get('logout','LoginController@logout')->name('logout');
-
-
 //product's detail
 Route::get('product/detail/{id}', 'PageController@detail')->name('detail');
-
 // Cart
 Route::get('them-san-pham/{id}','CartController@addProductToCart')->name('get.add.product');
 Route::get('gio-hang','CartController@listCartProduct')->name('gio-hang');
@@ -28,19 +25,14 @@ Route::get('gio-hang/remove/{id}', 'CartController@remove')->name('remove');
 Route::get('hair', 'PageController@hair')->name('hair');
 //makeup
 Route::get('makeup', 'PageController@makeup')->name('makeup');
-
 //b_tools
 Route::get('beauty_tool', 'PageController@tool')->name('beauty_tools');
-
 // //skincare
 Route::get('skincare', 'PageController@skincare')->name('skincare');
-
 // //b&b
 Route::get('bath_body', 'PageController@body')->name('bath_body');
-
 // //ffood
 Route::get('functional_food', 'PageController@food')->name('functional_foods');
-
 
 
 Route::get('DG', 'dropdownController@DG')->name('DG');
@@ -72,5 +64,13 @@ Route::get('manage/edit/{id}', 'manageProductsController@edit')->name('edit');
 Route::get('manage/edit/update/{id}', 'manageProductsController@update')->name('update');
 Route::get('manage/destroy/{id}', 'manageProductsController@destroy')->name('destroy');
 
+<<<<<<< HEAD
 Route::get('order', 'manageProductsController@bill')->name('order');
 >>>>>>> 6a8639fc35327a251e5c4efd2e6af412d291b38e
+=======
+//manager_search
+Route::get('manage/search', 'manageProductsController@search')->name('manage.search');
+//order_management
+Route::get('order', 'manageProductsController@bill')->name('order');
+Route::get('bill_detail/{id}', 'manageProductsController@bill_detail')->name('bill_detail');
+>>>>>>> b284283b8ce4b484c6fe82d7ca9020459a3f12a4
