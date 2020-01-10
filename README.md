@@ -25,6 +25,9 @@
 * Visual Studio Code
 * phpMyAdmin
 * MySQLServer
+### b) Công nghệ
+* Ngôn ngữ lập trình: PHP
+* Framework: Laravel (sử dụng mô hình MVC)
 # II. Công việc triển khai. 
 * Tìm hiểu về HTML và CSS cơ bản. 
 * Tìm hiểu về Boostrap cơ bản.
