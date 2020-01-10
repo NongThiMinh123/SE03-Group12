@@ -6,7 +6,13 @@ Route::get('login', 'LoginController@index')->name('nmn.login');
 Route::get('login/done', 'LoginController@login')->name('nmn.logindone');
 Route::get('sign', 'SignController@index')->name('nmn.signup');
 Route::get('sign/done', 'SignController@create')->name('nmn.insert');
+
 Route::get('logout','LoginController@logout')->name('logout');
+//product's detail
+Route::get('product/detail/{id}', 'PageController@detail')->name('detail');
+
+
+// Route::get('logout','LoginController@logout')->name('logout');
 // hair
 Route::get('hair', 'PageController@hair')->name('hair');
 //makeup
@@ -64,10 +70,16 @@ Route::get('manage/insert', 'manageProductsController@update_insert')->name('man
 Route::get('manage/edit/{id}', 'manageProductsController@edit')->name('edit');
 Route::get('manage/edit/update/{id}', 'manageProductsController@update')->name('update');
 Route::get('manage/destroy/{id}', 'manageProductsController@destroy')->name('destroy');
+
+
+
+
 //manager_search
 Route::get('manage/search', 'manageProductsController@search')->name('manage.search');
 //order_management
 Route::get('order', 'manageProductsController@bill')->name('order');
 Route::get('bill_detail/{id}', 'manageProductsController@bill_detail')->name('bill_detail');
+
 Route::get('order/bill_destroy/{id}', 'manageProductsController@bill_destroy')->name('bill_destroy');
 Route::get('order/search', 'manageProductsController@bill_search')->name('bill_search');
+?>

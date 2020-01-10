@@ -25,9 +25,11 @@
 * Visual Studio Code
 * phpMyAdmin
 * MySQLServer
+
 ### b) Công nghệ
 * Ngôn ngữ lập trình: PHP
 * Framework: Laravel (sử dụng mô hình MVC)
+
 # II. Công việc triển khai. 
 * Tìm hiểu về HTML và CSS cơ bản. 
 * Tìm hiểu về Boostrap cơ bản.
@@ -41,7 +43,9 @@
 https://hocwebchuan.com/tutorial/laravel/install_composer.php
 * CHÚ Ý: sau khi hoàn tất cài đặt, chạy câu lệnh ***composer require bumbummen99/shoppingcart*** tại **git bash** để có thể thực hiện các tính năng trong giỏ hàng.
 
-## 2. Cài đặt laravel.
+
+## 2.Cài đặt laravel.
+>
 ### a. Cấu hình yêu cầu khi cài đặt laravel.
 * PHP >= 5.6.4
 * OpenSSL PHP Extension
