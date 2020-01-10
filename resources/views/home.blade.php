@@ -87,8 +87,6 @@
                     </span>
                     <div class="header-icons">
                         &nbsp &nbsp &nbsp
-<<<<<<< HEAD
-=======
                         @if(Auth::check())
                         <span class=" dropdown">
                         <a  href=""><span class="header-icon dropdown animate-dropdown "><i class="far fa-user"> <span style="font-family:'Century Gothic';font-size:15px;">&nbsp  {{Auth::user()->username}}</span></i></a>
@@ -99,12 +97,12 @@
                             </div>
                         </span>
                         @else
->>>>>>> 6a8639fc35327a251e5c4efd2e6af412d291b38e
                         <span class="header-icon dropdown animate-dropdown">
                             <a href="{{route('nmn.login')}}" target="_parent">
                                 <i class="far fa-user"></i>
                             </a>
                         </span>
+                        @endif
                         &nbsp &nbsp &nbsp
                         <span class="header-icon dropdown animate-dropdown" >
                             <a href="{{route('gio-hang')}}">
@@ -209,7 +207,7 @@
                         </div>    
                             <div class="col-md-3">
                                 <div class="nav__right">
-                                    <form action="" role="search" class="box">
+                                    <form action="{{route('search')}}" role="search" class="box">
                                         <input type="search" name="search" placeholder="Search here" class="input_search" />
                                             <button style="border:none; background-color:white; margin-right:15px;"><i class='fas fa-search' style='font-size:15px'></i></button>
                                     </form>
@@ -286,18 +284,6 @@
                                             <div class="carousel-col">
                                                 <a href="#">
                                                     <div>
-<<<<<<< HEAD
-                                                        <a href="{{route('detail',$product->id}}"><img src="{{$product->product_img}}" alt="#" class=" img-responsive"></a>
-                                                    </div>
-                                                </a>
-                                                <div class ="product_info">
-                                                    <a href="{{route('detail',$product->id}}">{{$product->product_name}}</a>
-                                                    <p class="price">{{ number_format($product->product_price,0,',','.') }} VNĐ </p>
-                                                    <div class="single-item-caption">
-                                                        <p>
-                                                            <a class="beta-btn primary" href="{{route('detail',$product->id}}">Details</a> |
-                                                            <a href="#"><i class="glyphicon glyphicon-shopping-cart" align="right"></i></a>
-=======
                                                         <a href="{{route('detail',$product->id)}}"><img src="{{$product->product_img}}" alt="#" class=" img-responsive"></a>
                                                     </div>
                                                 </a>
@@ -308,7 +294,6 @@
                                                         <p>
                                                             <a class="beta-btn primary" href="{{route('detail',$product->id)}}">Details</a> |
                                                             <a href="{{route('get.add.product',$product->id)}}"><i class="glyphicon glyphicon-shopping-cart" align="right"></i></a>
->>>>>>> 6a8639fc35327a251e5c4efd2e6af412d291b38e
                                                             <div class="clearfix"></div>
                                                         </p>
                                                     </div>                                                    
@@ -340,11 +325,7 @@
                                                 <a href="#">
                                                     <!-- <div class="wrapper"> -->
                                                         <div class="img">                                                 
-<<<<<<< HEAD
-                                                            <a href="{{route('detail',$product->id}}"><img src="{{$product->product_img}}" alt="#" class=" img-responsive"></a>
-=======
                                                             <a href="{{route('detail',$product->id)}}"><img src="{{$product->product_img}}" alt="#" class=" img-responsive"></a>
->>>>>>> 6a8639fc35327a251e5c4efd2e6af412d291b38e
                                                             <div class="ribbon-wrapper">
                                                                 <div class="ribbon">20% OFF</div>
                                                             </div>
@@ -352,21 +333,12 @@
                                                     <!-- </div> -->
                                                 </a>
                                                 <div class ="product_info">
-<<<<<<< HEAD
-                                                    <a href="{{route('detail',$product->id}}">{{$product->product_name}}</a>
-                                                    <p class="price"><del>{{number_format($product->product_price,0,',','.')}} VNĐ</del> -> {{number_format($product->product_price,0,',','.')}} VNĐ</p>
-                                                    <div class="single-item-caption">
-                                                        <p>
-                                                            <a class="beta-btn primary" href="{{route('detail',$product->id}}">Details</a> |
-                                                            <a href="#"><i class="glyphicon glyphicon-shopping-cart" align="right"></i></a>
-=======
                                                     <a href="{{route('detail',$product->id)}}">{{$product->product_name}}</a>
                                                     <p class="price"><del>{{number_format($product->product_price,0,',','.')}} VNĐ</del> -> {{number_format($product->product_price,0,',','.')}} VNĐ</p>
                                                     <div class="single-item-caption">
                                                         <p>
                                                             <a class="beta-btn primary" href="{{route('detail',$product->id)}}">Details</a> |
                                                             <a href="{{route('get.add.product',$product->id)}}"><i class="glyphicon glyphicon-shopping-cart" align="right"></i></a>
->>>>>>> 6a8639fc35327a251e5c4efd2e6af412d291b38e
                                                             <div class="clearfix"></div>
                                                         </p>
                                                     </div>
@@ -387,18 +359,6 @@
                                             <div class="carousel-col">
                                                 <a href="#">
                                                     <div>
-<<<<<<< HEAD
-                                                        <a href="{{route('detail',$product->id}}"><img src="{{$product->product_img}}" alt="#" class=" img-responsive"></a>
-                                                    </div>
-                                                </a>
-                                                <div class ="product_info">
-                                                    <a href="{{route('detail',$product->id}}">{{$product->product_name}}</a>
-                                                    <p class="price">{{number_format($product->product_price,0,',','.')}} VNĐ</p>
-                                                    <div class="single-item-caption">
-                                                        <p>
-                                                            <a class="beta-btn primary" href="{{route('detail',$product->id}}">Details</a> |
-                                                            <a href="#"><i class="glyphicon glyphicon-shopping-cart" align="right"></i></a>
-=======
                                                         <a href="{{route('detail',$product->id)}}"><img src="{{$product->product_img}}" alt="#" class=" img-responsive"></a>
                                                     </div>
                                                 </a>
@@ -409,7 +369,6 @@
                                                         <p>
                                                             <a class="beta-btn primary" href="{{route('detail',$product->id)}}">Details</a> |
                                                             <a href="{{route('get.add.product',$product->id)}}"><i class="glyphicon glyphicon-shopping-cart" align="right"></i></a>
->>>>>>> 6a8639fc35327a251e5c4efd2e6af412d291b38e
                                                             <div class="clearfix"></div>
                                                         </p>
                                                     </div>

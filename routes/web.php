@@ -79,7 +79,8 @@ Route::get('manage/search', 'manageProductsController@search')->name('manage.sea
 //order_management
 Route::get('order', 'manageProductsController@bill')->name('order');
 Route::get('bill_detail/{id}', 'manageProductsController@bill_detail')->name('bill_detail');
-
 Route::get('order/bill_destroy/{id}', 'manageProductsController@bill_destroy')->name('bill_destroy');
 Route::get('order/search', 'manageProductsController@bill_search')->name('bill_search');
+//search
+Route::get('search', 'searchController@search')->name('search');
 ?>
