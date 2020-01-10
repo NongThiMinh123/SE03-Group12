@@ -36,7 +36,6 @@
             top: -3px;
             right: -3px;
         }
-
         .ribbon {
             font: bold 15px Sans-Serif;
             color: #DDDDDD;
@@ -57,7 +56,6 @@
             -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
             box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
         }
-
         .ribbon:before, .ribbon:after {
             content: "";
             border-top:   5px solid #DDDDDD;   
@@ -66,7 +64,6 @@
             position:absolute;
             bottom: -3px;
         }
-
         .ribbon:before {
             left: 0;
         }
@@ -110,7 +107,6 @@
                         <span class="header-icon dropdown animate-dropdown" >
                             <a href="{{route('gio-hang')}}">
                                 <i class="fas fa-shopping-basket"></i>
-                            
                             </a><span class="badge badge-light"></span>
                         </span>
                     </div>
@@ -213,7 +209,7 @@
                                 <div class="nav__right">
                                     <form action="" role="search" class="box">
                                         <input type="search" name="search" placeholder="Search here" class="input_search" />
-                                        <a ><i class='fas fa-search' style='font-size:18px'></i></a>
+                                            <button style="border:none; background-color:white; margin-right:15px;"><i class='fas fa-search' style='font-size:15px'></i></button>
                                     </form>
                                 </div>
                             </div>
@@ -253,11 +249,9 @@
         <script>
             var slideIndex = 0;
             showSlides();
-
             function showSlides() {
                 var slideIndex = 0;
                     showSlides();
-
                     function showSlides() {
                     var i;
                     var slides = document.getElementsByClassName("myslide");
@@ -468,10 +462,8 @@
 </body>
 <script>
     window.onscroll = function() {myFunction()};
-
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
-
 function myFunction() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")

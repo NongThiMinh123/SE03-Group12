@@ -38,9 +38,9 @@
     <div class="row">
         <div style="  margin-top:20px;" >
             <div class="col-sm-6" style=" margin-bottom:20px;">
-                <a href="" class="material-icons">library_add</a>            
+                <a href="{{route('add')}}" class="material-icons">library_add</a>            
             </div>
-            <form action="" role="search">
+            <form action="{{route('manage.search')}}" role="search">
                 <div class="col-sm-6"  style="width:300px; float:right; display: flex;">
                 <input type="search" name="manage_search" value="" class="form-control" >
                 <button class='btn btn-default btn-circle' ><i class=' fas fa-search' ></i></button>
@@ -85,8 +85,8 @@
                     <td >{{$product->product_description}}</td>
                     <td align=right>
                         <form>
-                            <a href=""><i class=" fas fa-edit"></i></a>
-                            <a style="width:42px;" href=""><i  class="fas fa-trash" ></i></a>
+                            <a href="{{route('edit',$product->id)}}"><i class=" fas fa-edit"></i></a>
+                            <a style="width:42px;" href="{{route('destroy',$product->id)}}"><i  class="fas fa-trash" ></i></a>
                         </form>
                     </td>
                 </tr>
@@ -125,8 +125,8 @@
                     <td >{{$product->product_description}}</td>
                     <td >
                         <form>
-                            <a href=""><i class=" fas fa-edit"></i></a>
-                            <a style="width:42px;" href=""><i  class="fas fa-trash" ></i></a>
+                            <a href="{{route('edit',$product->id)}}"><i class=" fas fa-edit"></i></a>
+                            <a style="width:42px;" href="{{route('destroy',$product->id)}}"><i  class="fas fa-trash" ></i></a>
                         </form>
                     </td>
                 </tr>
@@ -164,8 +164,8 @@
                     <td >{{$product->product_description}}</td>
                     <td >
                     <form>
-                            <a href=""><i class=" fas fa-edit"></i></a>
-                            <a style="width:42px;" href=""><i  class="fas fa-trash" ></i></a>
+                            <a href="{{route('edit',$product->id)}}"><i class=" fas fa-edit"></i></a>
+                            <a style="width:42px;" href="{{route('destroy',$product->id)}}"><i  class="fas fa-trash" ></i></a>
                         </form>
                     </td>
                 </tr>
@@ -203,8 +203,8 @@
                     <td >{{$product->product_description}}</td>
                     <td >
                         <form>
-                            <a href=""><i class=" fas fa-edit"></i></a>
-                            <a style="width:42px;" href=""><i  class="fas fa-trash" ></i></a>
+                            <a href="{{route('edit',$product->id)}}"><i class=" fas fa-edit"></i></a>
+                            <a style="width:42px;" href="{{route('destroy',$product->id)}}"><i  class="fas fa-trash" ></i></a>
                         </form>
                     </td>
                 </tr>
@@ -242,8 +242,8 @@
                     <td >{{$product->product_description}}</td>
                     <td >
                         <form>
-                            <a href=""><i class=" fas fa-edit"></i></a>
-                            <a style="width:42px;" href=""><i  class="fas fa-trash" ></i></a>
+                            <a href="{{route('edit',$product->id)}}"><i class=" fas fa-edit"></i></a>
+                            <a style="width:42px;" href="{{route('destroy',$product->id)}}"><i  class="fas fa-trash" ></i></a>
                         </form>
                     </td>
                 </tr>
@@ -281,8 +281,8 @@
                     <td >{{$product->product_description}}</td>
                     <td >
                     <form>
-                            <a href=""><i class=" fas fa-edit"></i></a>
-                            <a style="width:42px;" href=""><i  class="fas fa-trash" ></i></a>
+                            <a href="{{route('edit',$product->id)}}"><i class=" fas fa-edit"></i></a>
+                            <a style="width:42px;" href="{{route('destroy',$product->id)}}"><i  class="fas fa-trash" ></i></a>
                         </form>
                     </td>
                 </tr>

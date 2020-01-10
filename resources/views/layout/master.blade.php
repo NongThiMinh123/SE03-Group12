@@ -15,6 +15,9 @@
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/master.css') }}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>NMN</title>
         <style>
             .dropdown-content {
@@ -160,9 +163,9 @@
                         </div>    
                             <div class="col-md-3">
                                 <div class="nav__right">
-                                    <form action="" role="search" class="box">
+                                <form action="{{route('search')}}" role="search" class="box">
                                         <input type="search" name="search" placeholder="Search here" class="input_search" />
-                                        <a ><i class='fas fa-search' style='font-size:18px'></i></a>
+                                            <button style="border:none; background-color:white; margin-right:15px;"><i class='fas fa-search' style='font-size:15px'></i></button>
                                     </form>
                                 </div>
                             </div>
