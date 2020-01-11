@@ -136,7 +136,7 @@
 
         public function bill_destroy($id)
         {
-            $customer1=customer::find($id)
+            $customer1=customerModel::find($id)
             ->delete();
             Session::flash('message', "Successfully deleted");
 
